@@ -1,12 +1,17 @@
-import React from 'react';
+import React from 'react'
+import { Greeting } from './components/greeting/Greeting'
 
 function App() {
 	return (
 		<>
-			<h1>Test</h1>
-			<h1>Test2</h1>
+			<Greeting />
+			<Greeting />
+			<Greeting />
+			<Greeting />
+			<Greeting />
+			<Greeting />
 		</>
-	);
+	)
 }
 
-export default App;
+export default App
