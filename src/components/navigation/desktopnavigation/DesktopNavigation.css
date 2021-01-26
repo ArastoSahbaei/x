@@ -7,3 +7,8 @@
 .navigationLogotype {
 	width: 90px;
 }
+
+.signInButton,
+.profile {
+	grid-column: 15/16;
+}
