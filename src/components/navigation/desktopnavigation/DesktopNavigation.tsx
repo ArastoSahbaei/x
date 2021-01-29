@@ -1,10 +1,11 @@
 import './DesktopNavigation.css'
 import Logotype from '../../../shared/images/logotype.svg'
-import { useHistory } from 'react-router-dom'
 import { useContext } from 'react'
 import RoutingPath from '../../../routes/RoutingPath'
 import { UserContext } from '../../../shared/provider/UserProvider'
 import { Profile } from '../../profile/Profile'
+import { useHistory } from 'react-router-dom'
+import { DesktopNavigationTabs } from './desktopnavigationtabs/DesktopNavigationTabs'
 
 export const DesktopNavigation = () => {
 	const history = useHistory()
@@ -21,10 +22,9 @@ export const DesktopNavigation = () => {
 			<img className='navigationLogotype'
 				src={Logotype}
 				alt={''} />
-			<span onClick={() => history.push(RoutingPath.homeView)}>Producs</span>
-			<span onClick={() => history.push(RoutingPath.homeView)}>Brands</span>
-			<span onClick={() => history.push(RoutingPath.homeView)}>News</span>
-			<span onClick={() => history.push(RoutingPath.homeView)}>Guideline</span>
+			<div className='desktopNavigationTabs'>
+				<DesktopNavigationTabs />
+			</div>
 			{displaySignInButtonOrUsernameDependingOnAuthentication()}
 		</div>
 	)
