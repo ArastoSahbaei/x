@@ -10,7 +10,7 @@ import { ExpertiseView } from '../view/navigationtabviews/expertise/ExpertiseVie
 import { NewsView } from '../view/navigationtabviews/news/NewsView'
 import { ShopView } from '../view/navigationtabviews/shop/ShopView'
 
-export const Routes = (props: { children: React.ReactChild }) => {
+export const Routes = (props: { children: any }) => {
 	const [authUser, setAuthUser] = useContext(UserContext)
 	const { children } = props
 
