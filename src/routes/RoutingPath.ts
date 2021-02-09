@@ -6,6 +6,9 @@ const expertiseView = '/expertise'
 const newsView = '/news'
 const shopView = '/shop'
 
+/* Authenticated routes below */
+const settingsView = '/user/settings'
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
 	homeView,
@@ -14,5 +17,6 @@ export default {
 	brandsView,
 	expertiseView,
 	newsView,
-	shopView
+	shopView,
+	settingsView
 }
