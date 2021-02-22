@@ -10,6 +10,7 @@ import { ExpertiseView } from '../view/navigationtabviews/expertise/ExpertiseVie
 import { NewsView } from '../view/navigationtabviews/news/NewsView'
 import { ShopView } from '../view/navigationtabviews/shop/ShopView'
 import { SettingsView } from '../view/authenticatedviews/SettingsView'
+import { PokemonDetailView } from '../view/PokemonDetailView'
 
 export const Routes = (props: { children: any }) => {
 	const [authUser, setAuthUser] = useContext(UserContext)
@@ -41,6 +42,7 @@ export const Routes = (props: { children: any }) => {
 				<Route exact path={RoutingPath.newsView} component={NewsView} />
 				<Route exact path={RoutingPath.shopView} component={ShopView} />
 				<Route exact path={RoutingPath.settingsView} component={authenticationRequired(SettingsView, SignInView)} />
+				<Route exact path={RoutingPath.pokemonDetailView()} component={PokemonDetailView} />
 				<Route component={HomeView} />
 			</Switch>
 		</BrowserRouter>
