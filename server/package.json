@@ -6,7 +6,8 @@
 	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "npx nodemon Server.js"
+		"start": "npx nodemon Server.js",
+		"git": "git add .; git commit -m 'm'; git push origin master;"
 	},
 	"keywords": [
 		"REST_API",
@@ -17,6 +18,7 @@
 	"author": "Arasto Sahbaei (arasto.sahbaei@gmail.com)",
 	"license": "ISC",
 	"dependencies": {
+		"body-parser": "^1.19.0",
 		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
 		"helmet": "^4.4.1",
