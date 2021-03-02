@@ -6,8 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "npx nodemon Server.js",
-		"git": "git add .; git commit -m 'm'; git push origin master;"
+		"start": "npx nodemon Server.js"
 	},
 	"keywords": [
 		"REST_API",
