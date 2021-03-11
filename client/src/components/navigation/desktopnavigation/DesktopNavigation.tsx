@@ -14,7 +14,11 @@ export const DesktopNavigation = () => {
 	const displaySignInButtonOrUsernameDependingOnAuthentication = () => {
 		return authUser?.username
 			? <div className='profile'><Profile /></div>
+<<<<<<< HEAD
+			: <span className='signInButton' onClick={() => history.push(RoutingPath.signInView)}>Definitley signed in lol</span>
+=======
 			: <span className='signInButton' onClick={() => history.push(RoutingPath.signInView)}>Logga in</span>
+>>>>>>> 0ed896ffe3db5dbd510cc5f4364885337c0b2e51
 	}
 
 	return (
@@ -26,6 +30,8 @@ export const DesktopNavigation = () => {
 				<DesktopNavigationTabs />
 			</div>
 			{displaySignInButtonOrUsernameDependingOnAuthentication()}
+			<button>Tjena</button>
+			<button>Lol</button>
 		</div>
 	)
 }
